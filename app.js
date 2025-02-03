@@ -26,6 +26,7 @@ function sortearAmigo() {
         amigoSorteado.innerHTML = `<li>O amigo secreto sorteado é:${amigos[Math.floor(Math.random() * amigos.length)]}</li>`;
         listaAmigos.innerHTML = '';
         document.querySelector('.button-draw').setAttribute('disabled', true);
+        document.querySelector('.button-add').setAttribute('disabled', true);
     }
 
 }
