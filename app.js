@@ -6,7 +6,7 @@ function adicionarAmigo() {
     if (nomeAmigo == '') {
         alert('Por favor, insira um nome válido.');
     } else {
-        amigos.push(nomeAmigo);
+        amigos.push(nomeAmigo.charAt(0).toUpperCase() + nomeAmigo.slice(1));
 
         listaAmigos.innerHTML = ''
         for (x = 0; x < amigos.length; x++) {
