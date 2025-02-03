@@ -27,6 +27,7 @@ function sortearAmigo() {
         listaAmigos.innerHTML = '';
         document.querySelector('.button-draw').setAttribute('disabled', true);
         document.querySelector('.button-add').setAttribute('disabled', true);
+        document.getElementById('amigo').setAttribute('disabled', true);
     }
 
 }
