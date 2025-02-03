@@ -1,5 +1,4 @@
 let amigos = [];
-let amigoSorteado = '';
 
 function adicionarAmigo() {
     let nomeAmigo = document.getElementById('amigo').value;
@@ -10,7 +9,15 @@ function adicionarAmigo() {
     } else {
         amigos.push(nomeAmigo);
         listaAmigos.innerHTML = amigos.map(amigo => `<li>${amigo}</li>`).join('');
+        document.getElementById('amigo').value = ''
     }
+    
+
+};
+
+function sortearAmigo(){
+    let amigoSorteado = getElementById('resultado');
 
 
+    
 }
