@@ -23,15 +23,20 @@ function adicionarAmigo() {
 
 }
 
+function limparLista(){
+    listaAmigos.innerHTML = '';
+}
+
 function sortearAmigo() {
     let amigoSorteado = document.getElementById('resultado');
 
     // Verifica se existem nomes na lista para sorteio, caso não emite um alerta!
     if (amigos.length == 0) {
-        alert('Por favor, para sortear um amigo primeiramente digite algum nome');
+        alert('Por favor, para sortear um amigo primeiramente digite alguns nome');
     } else {
         amigoSorteado.innerHTML = `<li>O amigo secreto sorteado é:${amigos[Math.floor(Math.random() * amigos.length)]}</li>`;
-        listaAmigos.innerHTML = '';
+
+        limparLista();
 
         //Limpa o campo input após sorteio
         document.getElementById('amigo').value = '';
