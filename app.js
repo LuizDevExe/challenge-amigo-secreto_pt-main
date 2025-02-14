@@ -13,17 +13,22 @@ function adicionarAmigo() {
         // Transforma toda primeira letra em letra maiúscula caso digitem as iniciais em minúsculas.
         amigos.push(nomeAmigo.charAt(0).toUpperCase() + nomeAmigo.slice(1));
 
-        listaAmigos.innerHTML = ''
+        limparLista();
+        
         for (x = 0; x < amigos.length; x++) {
             listaAmigos.innerHTML += `<li>${amigos[x]}</li>`;
         }
 
-        document.getElementById('amigo').value = '';
+        limparCampo();
     }
 
 }
 
-function limparLista(){
+function limparCampo() {
+    document.getElementById('amigo').value = '';
+}
+
+function limparLista() {
     listaAmigos.innerHTML = '';
 }
 
@@ -39,7 +44,7 @@ function sortearAmigo() {
         limparLista();
 
         //Limpa o campo input após sorteio
-        document.getElementById('amigo').value = '';
+        limparCampo();
 
         //Desabilita botões sorteio e adicionar
         document.querySelector('.button-draw').setAttribute('disabled', true);
