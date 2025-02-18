@@ -25,8 +25,8 @@ Veja como funciona:
 
 Tomei a liberdade de adicionar algumas funcionalidades extras além das exigidas no desafio. Entre elas estão:
 
-Os botões "Adicionar" e "Sortear" são desabilitados após um sorteio.
-O campo de texto para adicionar amigos também é desabilitado após o sorteio.
-O botão "Sortear" só funciona quando há pelo menos um nome na lista de amigos.
+- Os botões "Adicionar" e "Sortear" são desabilitados após um sorteio.
+- O campo de texto para adicionar amigos também é desabilitado após o sorteio.
+- O botão "Sortear" só funciona quando há pelo menos um nome na lista de amigos.
   
 Você pode conferir aqui: [Amigo Secreto](https://luizdevexe.github.io/challenge-amigo-secreto_pt-main/)
