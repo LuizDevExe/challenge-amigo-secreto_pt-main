@@ -38,9 +38,10 @@ function sortearAmigo() {
 
     // Verifica se existem nomes na lista para sorteio, caso não emite um alerta!
     if (amigos.length == 0) {
-        alert('Por favor, para sortear um amigo primeiramente digite alguns nome');
+        alert('Por favor, para sortear um amigo primeiramente digite alguns nomes');
     } else {
-        amigoSorteado.innerHTML = `<li>O amigo secreto sorteado é:${amigos[Math.floor(Math.random() * amigos.length)]}</li>`;
+        let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        amigoSorteado.innerHTML = `<li>O amigo secreto sorteado é:${amigos[indiceAleatorio]}</li>`;
 
         limparLista();
 
