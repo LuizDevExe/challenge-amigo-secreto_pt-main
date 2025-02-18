@@ -19,6 +19,14 @@ Veja como funciona:
 :hammer: Funcionalidades
 
 - `Adição de amigos`: Digite os nomes dos participantes um por um e clique em adicionar.
-- `Sortear amigo`: Quando a lista estiver cheia é só clicar em sortear amigo e pronto, você tirou o seu amigo secreto!(não conta pra ninguém ta ?).
+- `Sortear amigo`: Quando a lista estiver cheia é só clicar em sortear amigo e pronto, você tirou o seu amigo secreto!(não conta pra ninguém ta?).
+
+🔨 Funcionalidades Adicionais
+
+Tomei a liberdade de adicionar algumas funcionalidades extras além das exigidas no desafio. Entre elas estão:
+
+Os botões "Adicionar" e "Sortear" são desabilitados após um sorteio.
+O campo de texto para adicionar amigos também é desabilitado após o sorteio.
+O botão "Sortear" só funciona quando há pelo menos um nome na lista de amigos.
   
 Você pode conferir aqui: [Amigo Secreto](https://luizdevexe.github.io/challenge-amigo-secreto_pt-main/)
