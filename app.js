@@ -1,27 +1,28 @@
 let amigos = [];
+let listaAmigos = document.getElementById('listaAmigos');
 
 function adicionarAmigo() {
 
     // Pega os elementos do html
     let nomeAmigo = document.getElementById('amigo').value;
-    let listaAmigos = document.getElementById('listaAmigos');
-
     // Verifica se o input de texto está vazio
     if (nomeAmigo == '') {
-        alert('Por favor, insira um nome válido.');
+        alert('Por favor, insira um nome.');
     } else {
         // Transforma toda primeira letra em letra maiúscula caso digitem as iniciais em minúsculas.
         amigos.push(nomeAmigo.charAt(0).toUpperCase() + nomeAmigo.slice(1));
 
-        limparLista();
-        
-        for (x = 0; x < amigos.length; x++) {
-            listaAmigos.innerHTML += `<li>${amigos[x]}</li>`;
-        }
-
         limparCampo();
+        atualizarListaAmigos()
     }
 
+}
+
+function atualizarListaAmigos() {
+    limparLista();
+    for (x = 0; x < amigos.length; x++) {
+        listaAmigos.innerHTML += `<li>${amigos[x]}</li>`;
+    }
 }
 
 function limparCampo() {
